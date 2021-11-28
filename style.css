@@ -1,0 +1,140 @@
+/* for the footer(original style) */
+.attribution { font-size: 11px; text-align: center; margin-top: 30px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+
+}
+
+/* card */
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 240px;
+    margin: 100px auto;
+    border: none;
+    border-radius: 10px;
+}
+.card .image-section{
+    position: relative;
+    margin: auto;
+    border: none;
+    border-radius: 20%;
+}
+.card .image-section img{
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 12%;
+}
+.card .header{
+    margin-left: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card .header:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.card .sub-text{
+    margin-left: 20px;
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+}
+.card .dateprice_section{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    font-size: 12px;
+}
+.card .dateprice_section .price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+}
+.card .dateprice_section .price img{
+   width: 7px; 
+   padding-right: 5px;
+   vertical-align: middle;
+}
+.card .dateprice_section .date{
+    color:hsl(215, 51%, 70%);
+    margin-left: 67px;
+    font-weight: 500;
+}
+.card .dateprice_section .date img{
+    width: 10px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.hr{
+    border-top: solid 1.5px hsl(215, 32%, 27%);
+    margin: 15px 20px;
+}
+
+.author{
+    color: hsl(215, 32%, 27%);
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+.author img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.author .name{
+    padding-left: 5px;
+    color: hsl(215, 51%, 70%);
+}
+.author .name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* mobile design */
+@media(max-width:375px){
+    .card{
+        margin: 70px auto;
+        width: 300px;
+    }
+    .card .image-section{
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+    .card .image-section img{
+        width: 260px;
+    }
+    .card .header{
+        font-size: 20px;
+    }
+    .card .sub-text{
+        font-size: 17px;
+    }
+    .card .dateprice_section{
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .card .dateprice_section .price img{
+        width: 10px;
+        vertical-align: middle;
+    }
+    .card .dateprice_section .date img{
+        width: 20px;
+        vertical-align: middle;
+    }
+    .author{
+        font-size: 15px;
+    }
+}
